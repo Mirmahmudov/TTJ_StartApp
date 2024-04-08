@@ -1,0 +1,60 @@
+/* USER */
+
+
+.user_profile {
+  width: 82%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c62ee;
+  padding: 0px 30px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
+.user_profile h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+}
+.user_profile .news {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.user_profile .news .bell {
+  width: 30px;
+  height: 30px;
+  background-color: #3d70f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.user_profile .news .bell img {
+  width: 15px;
+}
+
+.user_profile .news .user {
+  padding: 5px 8px;
+  background-color: #3d70f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+  gap: 5px;
+}
+.user_profile .news .user img{
+  width: 8px;
+}
+.user_profile .news .user .user_img {
+  width: 20px;
+}
+
+
