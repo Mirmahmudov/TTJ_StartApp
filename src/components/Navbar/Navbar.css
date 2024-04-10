@@ -27,7 +27,6 @@ nav h1 a {
   font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
-  
 }
 
 nav .page {
@@ -41,11 +40,15 @@ nav .page {
 }
 
 .students ul {
-  height: 0%;
+  /* height: 0%; */
   display: none !important;
 }
 .students.active ul {
   display: block !important;
+}
+.students.active ul a,
+.rooms.active ul a {
+  margin-top: 7px;
 }
 .rooms ul {
   display: none !important;
@@ -62,8 +65,11 @@ nav .page a span {
   text-transform: capitalize;
   color: #6a6a6a;
   border-radius: 15px;
-  cursor: pointer;  
+  cursor: pointer;
   padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 nav .page a {
   display: inline-block;
@@ -73,8 +79,7 @@ nav .page a {
   font-size: 16px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
-  margin-bottom: 10px;
-
+  /* margin-bottom: 10px; */
 }
 
 nav a.active span {
@@ -87,7 +92,6 @@ nav .page ul {
   flex-direction: column;
   background-color: none;
   gap: 10px;
-
 }
 
 nav .page ul a {
@@ -107,7 +111,6 @@ nav ul a.active {
   color: #2c62ee;
   gap: 5px !important;
   display: flex;
-
 }
 
 nav ul a.active svg {
@@ -118,6 +121,9 @@ nav ul a.active svg {
 }
 
 nav button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   width: 85%;
   background-color: #ffefef;
   color: #f93333;
@@ -129,6 +135,9 @@ nav button {
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+}
+nav button svg {
+  font-size: 23px;
 }
 /* 
 ul li {

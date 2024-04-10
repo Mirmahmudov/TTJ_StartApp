@@ -2,6 +2,9 @@ import React from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import { BiRadioCircle, BiRadioCircleMarked } from "react-icons/bi";
+import { FaHome, FaUserFriends } from "react-icons/fa";
+import { IoArrowUndoCircleOutline } from "react-icons/io5";
+import { FaMoneyCheckDollar } from "react-icons/fa6";
 
 function Navbar() {
   return (
@@ -13,7 +16,9 @@ function Navbar() {
 
         <div className="page">
           <NavLink className={"students"} to={"/students"}>
-            <span>Talabalar</span>
+            <span>
+              <FaUserFriends /> Talabalar
+            </span>
             <ul>
               <NavLink to={"/students/studentall"}>
                 <BiRadioCircle /> barchasi
@@ -35,8 +40,11 @@ function Navbar() {
             <span>Talabalar ma'lumoti</span>
           </NavLink>
           <NavLink className={"rooms"} to={"/rooms"}>
-            <span>xonalar</span>
-            <ul >
+            <span>
+              <FaHome />
+              xonalar
+            </span>
+            <ul>
               <NavLink to={"/rooms/roomsall"}>
                 <BiRadioCircle /> barchasi
               </NavLink>
@@ -58,13 +66,21 @@ function Navbar() {
           <NavLink to={"/RoomsInfo"}>
             <span>xonalar ma'lumoti</span>
           </NavLink>
-          <NavLink to={"/dsdsddssd"}>
-            <span>to'lovlar</span>
+          <NavLink to={"/paymet"}>
+            <span>
+              <FaMoneyCheckDollar />
+              to'lovlar
+            </span>
           </NavLink>
-          <div className="ul">{/* <li>Barchasi</li> */}</div>
+          {/* <div className="ul"><li>Barchasi</li></div> */}
         </div>
-        <button>Log Out</button>
+        <button>
+          {" "}
+          <IoArrowUndoCircleOutline /> Log Out
+        </button>
       </nav>
+      <div className="navFilter">
+      </div>
     </div>
   );
 }

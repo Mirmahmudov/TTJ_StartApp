@@ -1,38 +1,42 @@
 .students table {
   width: 100%;
   border: 1px solid black;
+  border: none;
   border-collapse: collapse;
   padding: 5px;
-  /* position: relative; */
+  text-align: center;
+}
+.students table a {
+  text-decoration: none;
 }
 
 .students tr {
   width: 100%;
-  border: 1px solid #6a6a6a;
+  /* border: 1px solid #6a6a6a; */
   border-collapse: collapse;
 }
+
 .students tr:hover {
   background-color: #ecf1ff;
   cursor: pointer;
-  border: 1px solid #6a6a6a;
+  /* border: 1px solid #6a6a6a;/ */
 }
 
 .students th {
   font-size: 14px;
   color: #6a6a6a;
   padding: 10px 5px;
-  border: 1px solid #6a6a6a;
+  /* border: 1px solid #6a6a6a; */
   text-transform: capitalize;
 }
 
 .students td {
-  /* background-color: ; */
 
   font-size: 12px;
   color: #6a6a6a;
   font-weight: 400;
   padding: 10px 5px;
-  border: 1px solid #6a6a6a;
+  /* border: 1px solid #6a6a6a; */
 }
 .students tr:hover th {
   color: #2c62ee;
@@ -40,4 +44,22 @@
 
 .students tr:hover td {
   color: #2c62ee;
+}
+table input {
+  outline: none;
+  padding: 5px 8px;
+  border: 1px solid #6a6a6a;
+  border-radius: 7px;
+  width: 100%;
+  text-transform: capitalize;
+}
+table select{
+  border: none;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  padding: 3px 2px;
+  border: 1px solid #6a6a6a;
+  border-radius: 7px;
 }

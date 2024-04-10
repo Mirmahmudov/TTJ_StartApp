@@ -13,6 +13,7 @@ import StudentWait from "./pages/students/StudentWait";
 import StudentGiven from "./pages/students/StudentGiven";
 import StudentOut from "./pages/students/StudentOut";
 import RoomsAll from "./pages/rooms/RoomsAll";
+import Paymet from "./pages/paymet/Paymet";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/students/studentwait" element={<StudentWait />} />
           <Route path="/students/studentgiven" element={<StudentGiven />} />
           <Route path="/students/studentout" element={<StudentOut />} />
+          <Route path="/paymet" element={<Paymet />} />
         </Routes>
       </BrowserRouter>
     </div>
